@@ -173,20 +173,22 @@
 			<div class="call-left">
 				<h2 id="calling">Contact Us</h2>
 				<h6>We will contact you 1x24 hours after we receive the data.</h6>
-				<form>
-					<label for="name-input" >Your Name:</label>
-					<input id="name-input" class="name-input" type="text" name="name-input" placeholder="First and last name" >
-					<label for="email-input">Email Address:</label>
-					<input id="email-input" class="email-input" type="text" name="email-input" placeholder="example@email.com">
-					<label for="interested-input">What are you interested in?</label>
-					<select id="select-input" class="select-option" name="select-option" >
-						<option>Select option</option>
-						<option value="interested-1">Interested 1</option>
-						<option value="interested-2">Interested 2</option>
-						<option value="interested-3">Interested 3</option>
-					</select>
-					<button id="btn-submit" class="btn" type="button">SEND</button>
-				</form>
+				<form class="contact-form" id="userForm" onsubmit="return validateForm()" >
+							<label for="name">Your Name:</label>
+							<input type="text" id="name" name="name" placeholder="First and last name">
+
+							<label for="email">Email Address:</label>
+							<input type="text" id="email" name="email" placeholder="example@email.com">
+
+							<label for="select">What are you interested in?</label>
+							<select id="select" name="select">
+								<option></option>
+								<option value="interested-one">Package 1</option>
+								<option value="interested-two">Package 2</option>
+								<option value="interested-three">Package 3</option>
+							</select>
+							<button class="btn" type="submit">SEND</button>
+						</form>
 			</div>
 			<div class="call-right">
 				<div class="call-item">
