@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	font: 16px/28px "Roboto", sans-serif;
+	background-color: white;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+hr {
+	width: 16rem;
+	margin: 1rem auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 3rem;
+}
+
+
+#head {
+	background-image: url(../assets/hero1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -50px;
+	overflow: hidden;
+	opacity: 0.9;
+	max-width: 100%;
+
+}
+
+
+.navbar-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+
+}
+
+
+.navbar ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+
+}
+
+
+#hero {
+	height: 600px;
+	max-width: 100%;
+	background-image: url(../assets/hero1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -50px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	opacity: 0.9;
+
+}
+
+@media only screen and (max-width: 600px) {
+	#hero {
+		height: 300px;
+		max-width: 100%;
+		background-image: url(../assets/hero1.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: 0 -50px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		opacity: 0.9;
+
+	}
+
+}
+
+
+
+.container h1 {
+	color: whitesmoke;
+	opacity: 1;
+}
+
+.container h6 {
+	color: whitesmoke;
+}
+
+#information {
+	height: 600px;
+	background-color: white;
+	text-align: left;
+	padding: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+	#information {
+		height: 900px;
+		background-color: white;
+		text-align: center;
+		padding: 3rem;
+	}
+
+
+}
+
+
+.main-info {
+	display: flex;
+	flex-direction: row;
+	padding-top: 6.5rem;
+	gap: 2rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.main-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	.main-info {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+
+	}
+
+}
+
+.hero-3 {
+	background-image: url(../assets/hero8.jpg) ;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -50px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	opacity: 0.9;
+	width: 586px;
+	height: 322px;
+	border-radius: 1.5%;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.hero-3 {
+		background-image: url(../assets/hero8.jpg) ;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: 0 -50px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		opacity: 0.9;
+		height: 400px;
+		width: 350px;
+		border-radius: 1.5%;
+
+	}
+
+}
+.info {
+	width: 990px;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.info {
+		width: 250pxpx;
+		text-align: center;
+
+	}
+
+}
+
+
+
+#portfolio {
+	height: 700px;
+	background-color: white;
+	text-align: center;
+	padding: 3rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+	#portfolio {
+		height: 500px;
+		background-color: white;
+		text-align: center;
+		padding: 3rem;
+	}
+
+}
+
+
+.portfolio-cover {
+	border-radius: 0.7rem;
+	overflow: hidden;
+	border: 1px solid lightgrey;
+}
+
+.portfolio-cover h4 {
+	font-weight: 500;
+	font-size: 1.05rem;
+}
+
+.portfolio-cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.portfolio-cover p {
+	text-align: left;
+}
+
+.portfolio-content {
+	height: 250px;
+}
+
+
+.portfolio-info {
+	padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.portfolio-link {
+	text-decoration: none;
+}
+
+
+.portfolio-tags {
+	display: flex;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.portfolio-tags div {
+	font-size: 0.9rem;
+	border: 1px solid #f1f1f1;
+	padding: 0.4rem 1rem;
+}
+
+
+
+#testimoni {
+	height: 700px;
+	background-color: white;
+	text-align: center;
+	padding: 3rem;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	#testimoni {
+		height: 1000px;
+		margin-top: 30rem;
+		background-color: white;
+		text-align: center;
+		padding: 3rem;
+
+
+	}
+}
+
+
+.main-testimoni {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: left;
+
+}
+
+@media only screen and (max-width: 670px) {
+	.main-testimoni {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.main-testimoni {
+		height: 1000px;
+		margin-top: 50rem;
+		background-color: white;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		padding: 3rem;
+
+	}
+}
+
+
+.customer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+	border-left: 1px solid black;
+	max-height: 560px;
+	padding-left: 2rem;
+}
+
+
+.customer-1 {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+
+
+}
+
+.customer-2 {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.customer-3 {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.customer-4 {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+
+.hero-2 {
+	background-image: url(../assets/hero9.jpg) ;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -50px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	opacity: 0.9;
+	width: 497px;
+	height: 480px;
+	border-radius: 1.5%;
+
+}
+
+#call {
+	height: 700px;
+	background-color: white;
+	text-align: left;
+	padding: 3rem;
+
+}
+
+@media only screen and (max-width: 530px) {
+	#call {
+		height: 900px;
+		margin-top: 8rem;
+		background-color: white;
+		text-align: left;
+		padding: 3rem;
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+	#call {
+		height: 900px;
+		background-color: white;
+		text-align: left;
+		padding: 3rem;
+	}
+}
+
+
+
+
+.main-call {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+	.main-call {
+		display: flex;
+		margin-top: 50rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+
+	}
+}
+
+.main-call h6 {
+	line-height: 15px;
+	font-weight: lighter;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.main-call form  {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+
+.main-call input, select {
+	width: 100%;
+	padding: 0.75rem 1.3rem;
+	font-family: "Roboto", sans-serif;
+	background: #fbfbfb;
+	border: 1px solid #f1f1f1;
+	border-radius: 3px;
+	resize: none;
+}
+
+
+.call-left {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.7rem;
+	overflow: hidden;
+	border: 1px solid lightgrey;
+	padding: 2rem 5rem;
+	
+}
+
+.main-call .btn {
+	width: 100%;
+	margin-top: 1rem;
+	padding: 0.75rem 1.3rem;
+	font-family: "Roboto", sans-serif;
+	background-color: darkslategray;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.main-call .btn:hover {
+	background-color: #232e35;
+	transition: .5s ease-in-out;
+}
+
+.call-item {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.call-item-icon {
+	background: darkslategray;
+	padding: 0.8rem 1rem;
+	width: 53px;
+	height: 53px;
+	border-radius: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.call-item-detail h4 {
+	margin-bottom: 0.6rem;
+}
+
+footer {
+	height: 60px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid black;
+}
+
+
+@media only screen and (max-width: 900px) {
+	footer {
+		height: 60px;
+		margin-top: 44rem;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid black;
+	}
+}
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
