@@ -29,9 +29,30 @@ function showImage(index) {
             if (name == ''|| email == '' || select =='') {
                 alert('The form is empty');
             } else {
-                alert('Thank You');
+                alert('Thank You for completing the form');
             }
             return false;
         }
+
+
+
+        const userForm = document.getElementById("userForm");
+        const userCard = document.getElementById("userCard");
+
+        userForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = userForm.elements.name.value;
+            const email = userForm.elements.email.value;
+            const select = userForm.elements.select.options[userForm.elements.select.selectedIndex].text;
+
+            userCard.innerHTML = `
+            <h2>Thank You</h2>
+            <p><strong>${name}</strong></p>
+            <p>${email}</p>
+            <p><strong>Your chosen package is</strong> <br>${select}</p>
+            
+            `;
+        });
 
 
