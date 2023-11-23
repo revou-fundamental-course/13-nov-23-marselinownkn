@@ -11,6 +11,7 @@ body {
 	font: 16px/28px "Roboto", sans-serif;
 	background-color: white;
 	color: #333;
+
 }
 
 a {
@@ -30,15 +31,83 @@ hr {
 	gap: 3rem;
 }
 
-
-#head {
+/*hamburger menu*/
+.navbar-second {
+	position: fixed;
+	top: 0;
+	right: 0;
 	background-image: url(../assets/hero1.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -50px;
 	overflow: hidden;
-	opacity: 0.9;
+	opacity:1;
+	color: #fff;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 9px;
+	z-index: 999;
+	gap: 2rem;
+	border-radius: 5%;
+}
+
+.hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 3px 0;
+}
+
+.menu {
+	display: none;
+}
+
+
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu ul li {
+	padding: 10px 0;
+}
+
+.menu ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu ul li a:hover {
+	background-color: lightgrey;
+	border-radius: 3px;
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	padding: 8px 0;
+}
+
+.menu.active {
+	display: block;
+}
+
+/*end hamburger*/
+
+
+#head {
+	background-color: white;
 	max-width: 100%;
+
+
 
 }
 
@@ -46,14 +115,31 @@ hr {
 .navbar-logo {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	background-image: url(../assets/hero1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -50px;
+	overflow: hidden;
+
 
 
 }
 
 
+.navbar-main ul li a:hover {
+	background-color: white;
+	opacity: .5;
+	border-radius: 3px;
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	padding: 8px 1px;
+}
 
-.navbar ul li {
+
+.navbar-main ul li {
 	display: inline-block;
 	margin-top: 10px;
 	margin-right: 10px;
@@ -113,11 +199,13 @@ hr {
 	background-color: white;
 	text-align: left;
 	padding: 3rem;
+
+
 }
 
 @media only screen and (max-width: 900px) {
 	#information {
-		height: 900px;
+		height: 1500px;
 		background-color: white;
 		text-align: center;
 		padding: 3rem;
@@ -131,7 +219,7 @@ hr {
 	display: flex;
 	flex-direction: row;
 	padding-top: 6.5rem;
-	gap: 2rem;
+	gap: 4rem;
 
 
 }
@@ -157,6 +245,62 @@ hr {
 		gap: 2rem;
 
 
+	}
+
+}
+
+.offer-container {
+	display: flex;
+	flex-direction: column;
+	gap: .7rem;
+	order: 1;
+	
+}
+
+@media only screen and (max-width: 900px) {
+	.offer-container {
+		display: flex;
+		order: -2;
+
+	}
+
+}
+
+
+
+.offer-container h5 {
+	text-align: justify;
+	font-weight: lighter;
+}
+
+.offer-container h2 {
+	text-align: center;
+}
+
+.offer {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.offer svg {
+	height: 48px;
+	width: 48px;
+}
+
+.offering {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+	.offering {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.7rem;
 	}
 
 }
@@ -189,12 +333,28 @@ hr {
 
 }
 
+@media only screen and (max-width: 600px) {
+	.hero-3 {
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 400px;
+		width: 350px;
+		border-radius: 1.5%;
+
+	}
+
+}
+
+
 .img-slideshow {
 	object-fit: cover;
 }
 
 .info {
-	width: 990px;
+	width: 550px;
+
 
 }
 
@@ -447,6 +607,7 @@ hr {
 }
 
 .main-call h6 {
+	font-size: 13px;
 	line-height: 15px;
 	font-weight: lighter;
 	padding-top: 0.5rem;
@@ -536,7 +697,7 @@ footer {
 @media only screen and (max-width: 900px) {
 	footer {
 		height: 60px;
-		margin-top: 65rem;
+		margin-top: 70rem;
 		background-color: white;
 		display: flex;
 		justify-content: center;

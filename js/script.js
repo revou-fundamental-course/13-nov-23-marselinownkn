@@ -1,3 +1,8 @@
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+
 var slideIndex = 1
 setInterval(function(){
     plusDiv(1)

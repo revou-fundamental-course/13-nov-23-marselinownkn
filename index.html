@@ -8,11 +8,12 @@
 </head>
 <body>
 	<header id="head">
+
 		<section class="navbar-logo">
 			<div class="logo">
 				<a href="#head">Travel AgentKu<br> by RevoU</a>
 			</div>
-			<div class="navbar">
+			<div class="navbar-main">
 				<nav>
 					<ul>
 						<li><a href="#head">Home</a></li>
@@ -22,10 +23,28 @@
 				</ul>
 			</nav>
 		</div>
-	</section>
+		<div class="humberger">
+			<div class="navbar-second">
+				<div class="hamburger-menu" onclick="toggleMenu()">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#head">Home</a></li>
+						<li><a href="#portfolio">Our Package</a></li>
+						<li><a href="#calling">Call Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</section >
 </header>
 
 <main id="main">
+
 	<section id="hero">
 		<div class="container">
 			<h1>Your Trusted Travel Agent's</h1>
@@ -34,7 +53,9 @@
 	</section>
 	
 	<section id="information">
+		
 		<div class="main-info">
+			
 			<div class="hero-3">
 				<img 
 				class="img-slideshow" 
@@ -58,11 +79,42 @@
 			<div class="info">
 				<h1>Welcome! <br>Today, we’re uncovering <br>a groundbreaking <br>correlation between <br>workplace stress and the <br>restorative power of travel. <br>Our research <br>found that individuals <br>experiencing high <br>stress at work reported <br>remarkable stress reduction <br>post-travel. </h1>
 			</div>
+			<div class="offer-container">
+				<h2>Explore Your Dream Holiday</h2>
+				<h5>Seize the sunshine, embrace the adventure! Explore our top-notch vacation.</h5>
+				<div class="offer">
+					<div class="offering">
+						<div class="offer-left">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-number-1-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.642 .005l.616 .017l.299 .013l.579 .034l.553 .046c4.687 .455 6.65 2.333 7.166 6.906l.03 .29l.046 .553l.041 .727l.006 .15l.017 .617l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.455 4.687 -2.333 6.65 -6.906 7.166l-.29 .03l-.553 .046l-.727 .041l-.15 .006l-.617 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.687 -.455 -6.65 -2.333 -7.166 -6.906l-.03 -.29l-.046 -.553l-.041 -.727l-.006 -.15l-.017 -.617l-.004 -.318v-.648l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.455 -4.687 2.333 -6.65 6.906 -7.166l.29 -.03l.553 -.046l.727 -.041l.15 -.006l.617 -.017c.21 -.003 .424 -.005 .642 -.005zm.994 5.886c-.083 -.777 -1.008 -1.16 -1.617 -.67l-.084 .077l-2 2l-.083 .094a1 1 0 0 0 0 1.226l.083 .094l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l.293 -.293v5.586l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-8l-.006 -.114z" stroke-width="0" fill="currentColor" /></svg>
+						</div>
+						<div class="offer-right">
+							Safety is paramount at our travel agency. We ensure secure, comfortable, and budget-friendly trips for you.
+						</div>
+					</div>
+					<div class="offering">
+						<div class="offer-left">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-number-2-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.642 .005l.616 .017l.299 .013l.579 .034l.553 .046c4.687 .455 6.65 2.333 7.166 6.906l.03 .29l.046 .553l.041 .727l.006 .15l.017 .617l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.455 4.687 -2.333 6.65 -6.906 7.166l-.29 .03l-.553 .046l-.727 .041l-.15 .006l-.617 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.687 -.455 -6.65 -2.333 -7.166 -6.906l-.03 -.29l-.046 -.553l-.041 -.727l-.006 -.15l-.017 -.617l-.004 -.318v-.648l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.455 -4.687 2.333 -6.65 6.906 -7.166l.29 -.03l.553 -.046l.727 -.041l.15 -.006l.617 -.017c.21 -.003 .424 -.005 .642 -.005zm1 5h-3l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h3v2h-2l-.15 .005a2 2 0 0 0 -1.844 1.838l-.006 .157v2l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h3l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007h-3v-2h2l.15 -.005a2 2 0 0 0 1.844 -1.838l.006 -.157v-2l-.005 -.15a2 2 0 0 0 -1.838 -1.844l-.157 -.006z" stroke-width="0" fill="currentColor" /></svg>
+						</div>
+						<div class="offer-right">
+							At our agency, safety is key. Enjoy secure, affordable, and comfortable travel experiences.
+						</div>
+					</div>
+					<div class="offering">
+						<div class="offer-left">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-number-3-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.642 .005l.616 .017l.299 .013l.579 .034l.553 .046c4.687 .455 6.65 2.333 7.166 6.906l.03 .29l.046 .553l.041 .727l.006 .15l.017 .617l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.455 4.687 -2.333 6.65 -6.906 7.166l-.29 .03l-.553 .046l-.727 .041l-.15 .006l-.617 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.687 -.455 -6.65 -2.333 -7.166 -6.906l-.03 -.29l-.046 -.553l-.041 -.727l-.006 -.15l-.017 -.617l-.004 -.318v-.648l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.455 -4.687 2.333 -6.65 6.906 -7.166l.29 -.03l.553 -.046l.727 -.041l.15 -.006l.617 -.017c.21 -.003 .424 -.005 .642 -.005zm1 5h-2l-.15 .005a2 2 0 0 0 -1.85 1.995a1 1 0 0 0 1.974 .23l.02 -.113l.006 -.117h2v2h-2l-.133 .007c-1.111 .12 -1.154 1.73 -.128 1.965l.128 .021l.133 .007h2v2h-2l-.007 -.117a1 1 0 0 0 -1.993 .117a2 2 0 0 0 1.85 1.995l.15 .005h2l.15 -.005a2 2 0 0 0 1.844 -1.838l.006 -.157v-2l-.005 -.15a1.988 1.988 0 0 0 -.17 -.667l-.075 -.152l-.019 -.032l.02 -.03a2.01 2.01 0 0 0 .242 -.795l.007 -.174v-2l-.005 -.15a2 2 0 0 0 -1.838 -1.844l-.157 -.006z" stroke-width="0" fill="currentColor" /></svg>
+						</div>
+						<div class="offer-right">
+							Your safety matters most. Our agency offers secure, cozy, and cost-effective journeys.
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 		
 	</section>
 	<section id="portfolio">
-		<h2>Explore Your Dream Holiday</h2>
+		<h2>Our Package</h2>
 		<hr>
 		<div class="main-portfolio">
 			<div class="grid">
@@ -119,7 +171,7 @@
 	<section id="testimoni">
 		<div class="main-testimoni">
 			<div class="customer">
-				<h2>Meet Our Best Friend's</h2>
+				<h2>Meet Our Friend's</h2>
 				<hr>
 				<div class="testimoni-1">
 					<h6>Vacation becomes more fun with Travel AgentKu</h6>
